@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,28 +28,66 @@
                                     <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="nkH-Zy-G7d"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Aquí se mostrará el resultado de tu consulta :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K1u-SF-2Xw">
-                                <rect key="frame" x="17" y="116" width="338" height="358"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTV-SE-BF9">
+                                <rect key="frame" x="17" y="126" width="48" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Wo9-FF-4NE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor(es):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAl-th-yT4">
+                                <rect key="frame" x="17" y="155" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnB-TV-iEc">
+                                <rect key="frame" x="73" y="126" width="282" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="klr-fr-8wF">
+                                <rect key="frame" x="17" y="200" width="338" height="372"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYv-RW-Jyc">
+                                <rect key="frame" x="97" y="155" width="258" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K1u-SF-2Xw" secondAttribute="bottom" constant="193" id="3hR-S5-2ZD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lwm-8u-RIR" secondAttribute="trailing" constant="4" id="FaX-yP-SbJ"/>
-                            <constraint firstItem="K1u-SF-2Xw" firstAttribute="top" secondItem="lwm-8u-RIR" secondAttribute="bottom" constant="24" id="HdL-U1-3jE"/>
-                            <constraint firstItem="lwm-8u-RIR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="cMZ-va-Tna"/>
-                            <constraint firstItem="lwm-8u-RIR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="eeO-DX-dbL"/>
-                            <constraint firstItem="lwm-8u-RIR" firstAttribute="trailing" secondItem="K1u-SF-2Xw" secondAttribute="trailing" id="esv-Oh-EOk"/>
-                            <constraint firstItem="lwm-8u-RIR" firstAttribute="leading" secondItem="K1u-SF-2Xw" secondAttribute="leading" id="l7D-Wz-mOR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lwm-8u-RIR" secondAttribute="trailing" constant="4" id="2Hc-NC-jjj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="klr-fr-8wF" secondAttribute="bottom" constant="95" id="4i3-gQ-RRd"/>
+                            <constraint firstItem="lwm-8u-RIR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="5tF-lt-5jk"/>
+                            <constraint firstItem="HYv-RW-Jyc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="84D-4Z-ftg"/>
+                            <constraint firstItem="sTV-SE-BF9" firstAttribute="baseline" secondItem="WnB-TV-iEc" secondAttribute="baseline" id="9mH-EW-Mlx"/>
+                            <constraint firstItem="pAl-th-yT4" firstAttribute="baseline" secondItem="HYv-RW-Jyc" secondAttribute="firstBaseline" id="Efs-Bt-gvq"/>
+                            <constraint firstItem="pAl-th-yT4" firstAttribute="top" secondItem="sTV-SE-BF9" secondAttribute="bottom" constant="8" symbolic="YES" id="Eye-pk-6sb"/>
+                            <constraint firstItem="pAl-th-yT4" firstAttribute="leading" secondItem="klr-fr-8wF" secondAttribute="leading" id="I9S-q3-r1o"/>
+                            <constraint firstItem="sTV-SE-BF9" firstAttribute="top" secondItem="lwm-8u-RIR" secondAttribute="bottom" constant="34" id="LEx-dL-CHb"/>
+                            <constraint firstItem="HYv-RW-Jyc" firstAttribute="trailing" secondItem="klr-fr-8wF" secondAttribute="trailing" id="Pu2-pZ-0jT"/>
+                            <constraint firstItem="pAl-th-yT4" firstAttribute="baseline" secondItem="HYv-RW-Jyc" secondAttribute="baseline" id="QKd-lN-MTU"/>
+                            <constraint firstItem="lwm-8u-RIR" firstAttribute="leading" secondItem="sTV-SE-BF9" secondAttribute="leading" id="UVr-GC-n8k"/>
+                            <constraint firstItem="sTV-SE-BF9" firstAttribute="leading" secondItem="pAl-th-yT4" secondAttribute="leading" id="Z7M-rX-3TC"/>
+                            <constraint firstItem="WnB-TV-iEc" firstAttribute="leading" secondItem="sTV-SE-BF9" secondAttribute="trailing" constant="8" symbolic="YES" id="diN-lE-JqS"/>
+                            <constraint firstItem="lwm-8u-RIR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="lzU-iy-1K0"/>
+                            <constraint firstItem="sTV-SE-BF9" firstAttribute="baseline" secondItem="WnB-TV-iEc" secondAttribute="firstBaseline" id="mBi-Uc-c0v"/>
+                            <constraint firstItem="WnB-TV-iEc" firstAttribute="trailing" secondItem="HYv-RW-Jyc" secondAttribute="trailing" id="qjY-fW-eKl"/>
+                            <constraint firstItem="lwm-8u-RIR" firstAttribute="trailing" secondItem="WnB-TV-iEc" secondAttribute="trailing" id="x7i-Tv-G9J"/>
+                            <constraint firstItem="klr-fr-8wF" firstAttribute="top" secondItem="pAl-th-yT4" secondAttribute="bottom" constant="24" id="yBw-7j-qBN"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="autorLabel" destination="HYv-RW-Jyc" id="wzf-qA-8I3"/>
                         <outlet property="isbnTextField" destination="lwm-8u-RIR" id="luq-hA-MXK"/>
-                        <outlet property="resultadoTextView" destination="K1u-SF-2Xw" id="rH4-eI-goQ"/>
+                        <outlet property="portadaImageView" destination="klr-fr-8wF" id="BVw-in-otb"/>
+                        <outlet property="tituloLabel" destination="WnB-TV-iEc" id="hNE-pw-nZC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
