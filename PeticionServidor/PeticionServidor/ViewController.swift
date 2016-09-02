@@ -18,14 +18,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
   @IBAction func textFieldDoneEditing(sender:UITextField){
     sender.resignFirstResponder()
     //9780963097002
-    //9788437604947
+    //978-843-760-4947
     //9780787955496 
     //9783161484100
     //9780246121004
     //9785949621530
     asincrono(isbnTextField.text)
   }
-  
   
   func asincrono(ISBN:String?){
     
@@ -63,7 +62,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
               }
               else {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                  self.portadaImageView.image = nil
+                  self.portadaImageView.image = UIImage(named: "sinPortada.jpg")
                 })
               }
               

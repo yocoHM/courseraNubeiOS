@@ -12,6 +12,7 @@
 		D62E98EB1D73BAD8004B33BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62E98E91D73BAD8004B33BB /* Main.storyboard */; };
 		D62E98ED1D73BAD8004B33BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62E98EC1D73BAD8004B33BB /* Assets.xcassets */; };
 		D62E98F01D73BAD8004B33BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62E98EE1D73BAD8004B33BB /* LaunchScreen.storyboard */; };
+		D66895131D79C87000AC14A2 /* sinPortada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D66895121D79C87000AC14A2 /* sinPortada.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D62E98EC1D73BAD8004B33BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D62E98EF1D73BAD8004B33BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D62E98F11D73BAD8004B33BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66895121D79C87000AC14A2 /* sinPortada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sinPortada.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				D62E98E71D73BAD8004B33BB /* ViewController.swift */,
 				D62E98E91D73BAD8004B33BB /* Main.storyboard */,
 				D62E98EC1D73BAD8004B33BB /* Assets.xcassets */,
+				D66895121D79C87000AC14A2 /* sinPortada.jpg */,
 				D62E98EE1D73BAD8004B33BB /* LaunchScreen.storyboard */,
 				D62E98F11D73BAD8004B33BB /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				D62E98F01D73BAD8004B33BB /* LaunchScreen.storyboard in Resources */,
 				D62E98ED1D73BAD8004B33BB /* Assets.xcassets in Resources */,
+				D66895131D79C87000AC14A2 /* sinPortada.jpg in Resources */,
 				D62E98EB1D73BAD8004B33BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				D62E98F61D73BAD9004B33BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
